@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <script src="./script.js"></script>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet" />
+    <title>Crypto Watcher</title>
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body id="body">
+    <div class="main">
+        <div class="cards">
+            <div class="card">
+                <div class="card-content">
+                    <div class="icon">
+                        <img src="https://icons.iconarchive.com/icons/cjdowner/cryptocurrency-flat/1024/Bitcoin-BTC-icon.png" alt="" />
+                    </div>
+                    <div class="name">BTC</div>
+                    <div id="btc-live" class="live-price"></div>
+                    <div id="btc-loader" class="spinner-border text-primary" role="status"></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <div class="icon">
+                        <img src="https://icons.iconarchive.com/icons/cjdowner/cryptocurrency-flat/1024/Ripple-XRP-icon.png" alt="" />
+                    </div>
+                    <div class="name">XRP</div>
+                    <div id="xrp-live" class="live-price"></div>
+                    <div id="xrp-loader" class="spinner-border text-primary" role="status"></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <div class="icon">
+                        <img src="https://cdn.iconscout.com/icon/free/png-256/dogecoin-441958.png" alt="" />
+                    </div>
+                    <div class="name">DOGE</div>
+                    <div id="doge-live" class="live-price"></div>
+                    <div id="doge-loader" class="spinner-border text-primary" role="status"></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <div class="icon">
+                        <img src="https://icons.iconarchive.com/icons/cjdowner/cryptocurrency-flat/1024/Ethereum-ETH-icon.png" alt="" />
+                    </div>
+                    <div class="name">ETH</div>
+                    <div id="eth-live" class="live-price"></div>
+                    <div id="eth-loader" class="spinner-border text-primary" role="status"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<!--   -->

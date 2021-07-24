@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <script
+      src="https://kit.fontawesome.com/1160a00782.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js"></script>
+    <title>Github Cards</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="main-placeholder">
+        <div class="search">
+          <input
+            type="text"
+            id="search-text"
+            placeholder="Search for github User Profile..."
+          />
+        </div>
+        <div class="profile-card">
+          <div class="avatar">
+            <img
+              class="prof-pic"
+              id="avatar"
+              src="https://avatars.githubusercontent.com/u/9919?v=4"
+              alt=""
+            />
+          </div>
+          <div class="not-found">
+            <h1 id="not-found" class="hidden text-center text-danger">
+              User Not Found
+            </h1>
+          </div>
+          <div id="user-details" class="user-details">
+            <div class="uname fw-bold" id="userid"></div>
+            <div class="name mt-3">
+              <div id="fullName"></div>
+              <div class="location">
+                <div class="user-data d-flex">
+                  <i class="loc-icon fas fa-thumbtack"></i>
+                  <div id="location"></div>
+                </div>
+              </div>
+            </div>
+            <p id="bio" class="bio mt-4 mb-4"></p>
+
+            <div class="user-stats">
+              <div class="total-followers">
+                <div class="counter">
+                  <span id="followers"></span>
+                </div>
+                <div>Followers</div>
+              </div>
+              <div class="total-followers">
+                <div class="counter">
+                  <span id="following"></span>
+                </div>
+                <div>Following</div>
+              </div>
+            </div>
+
+            <div class="repo-stats">
+              <div class="total-repos">
+                <div class="circle-labels mx-2">
+                  <span id="totalRepo" class="totalRepos"></span>
+                </div>
+                <div>Repos</div>
+              </div>
+            </div>
+
+            <div class="website">
+              <div class="user-data d-flex mt-1">
+                <i class="globe-icon fas fa-globe"></i>
+                <a href="" onclick="openBlog()" id="blog"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

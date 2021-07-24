@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <script src="https://kit.fontawesome.com/1160a00782.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet" />
+    <title>Random Gradient | Everything is random</title>
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body id="screen">
+    <div class="main">
+        <div class="d-flex color-details">
+            <div class="label" id="angle"></div>
+            <i style="font-size: 24px" class="fas">&#xf061;</i>
+
+            <div class="label" id="color1"></div>
+            <i style="font-size: 24px" class="fas">&#xf061;</i>
+
+            <div class="label" id="color2"></div>
+        </div>
+
+        <button class="btn copy-btn" onclick="copyGrad()">
+        Copy Gradient<i class="fas fa-copy copy-icon"></i>
+      </button>
+        <button class="btn" onclick="changeBg()">Change Gradient</button>
+    </div>
+
+    <div id="clip" class="clipboard">
+        <div class="status">Copied!</div>
+    </div>
+</body>
+
+</html>

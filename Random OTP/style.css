@@ -1,0 +1,116 @@
+.myrow {
+  justify-content: space-evenly;
+  /* margin: auto; */
+  align-items: center;
+}
+body {
+  height: 100vh;
+  font-family: "Lexend", sans-serif !important;
+  background-image: linear-gradient(
+    -225deg,
+    #69eacb 0%,
+    #eaccf8 48%,
+    #6654f1 100%
+  );
+}
+#otp {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.mycard {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background: black;
+  color: white;
+  flex-direction: column;
+  overflow: hidden;
+}
+.timer {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+.timer-border {
+  width: 80px;
+  height: 80px;
+  --v: calc(((18 / 5) * var(--p) - 90) * 1deg);
+
+  display: inline-block;
+  border-radius: 50%;
+  padding: 5px;
+  background: linear-gradient(#1595af, #86a582) content-box,
+    linear-gradient(var(--v), #f2f2f2 50%, transparent 0) 0 /
+      min(100%, (50 - var(--p)) * 100%),
+    linear-gradient(var(--v), transparent 50%, #1ff070 0) 0 /
+      min(100%, (var(--p) - 50) * 100%),
+    linear-gradient(to right, #f2f2f2 50%, #15f7ac 0);
+  font-size: -webkit-xxx-large;
+  color: white;
+}
+.timer-text {
+  align-self: center;
+  margin-left: 10px;
+}
+.time {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  /* border-radius: 100%; */
+  /* display: flex; */
+  /* justify-content: center; */
+  align-items: center;
+  height: 100%;
+}
+.num {
+  min-height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dupa2[data-num="0"] {
+  transform: translate(0, 225px);
+}
+.dupa2[data-num="1"] {
+  transform: translate(0, 175px);
+}
+.dupa2[data-num="2"] {
+  transform: translate(0, 125px);
+}
+.dupa2[data-num="3"] {
+  transform: translate(0, 75px);
+}
+.dupa2[data-num="4"] {
+  transform: translate(0, 25px);
+}
+.dupa2[data-num="5"] {
+  transform: translate(0, -25px);
+}
+.dupa2[data-num="6"] {
+  transform: translate(0, -75px);
+}
+.dupa2[data-num="7"] {
+  transform: translate(0, -125px);
+}
+.dupa2[data-num="8"] {
+  transform: translate(0, -175px);
+}
+.dupa2[data-num="9"] {
+  transform: translate(0, -225px);
+}
+.dupa2 {
+  transition: all 1s ease;
+}
+h1 {
+  font-weight: bold !important;
+  color: #4c4545;
+  box-shadow: 0px 0px 6px -1px #a2a2a2;
+}

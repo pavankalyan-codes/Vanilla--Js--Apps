@@ -1,0 +1,76 @@
+body {
+  height: 100vh;
+  margin: 0;
+  background: black;
+}
+
+.main {
+  padding: 50px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sudoku {
+  background: white;
+  margin: auto;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto;
+  grid-template-rows: auto auto auto auto auto auto auto auto auto;
+}
+
+.item {
+  background: #000000;
+  border: 1px solid #ffffff;
+}
+
+.btn {
+  border: none;
+  height: 50px;
+  background: rgb(146, 223, 23);
+  color: white;
+  width: 200px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.btn-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.cell {
+  height: calc(100vw / 12);
+  width: calc(100vw / 12);
+  font-size: 20px;
+  text-align: center;
+  display: flex;
+  border: none;
+  background: black;
+  color: white;
+}
+
+.br {
+  border-right: 1px solid red;
+}
+
+.bb {
+  border-bottom: 1px solid red;
+}
+
+.bl {
+  border-left: 1px solid red;
+}
+
+.bt {
+  border-top: 1px solid red;
+}
+@media (min-width: 650px) {
+  .cell {
+    height: 40px;
+    width: 40px;
+  }
+}

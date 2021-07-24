@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <script src="https://kit.fontawesome.com/1160a00782.js" crossorigin="anonymous"></script>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+    <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="./script.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="main">
+        <div class="wrapper">
+            <div class="content">
+                <h1>pomodoro</h1>
+                <div class="toggler">
+                    <div class="tog-wrap">
+                        <button onclick="changeMode('pom')" id="pom" class="btn pom active">
+                pomodoro
+              </button>
+                        <button onclick="changeMode('sb')" id="sb" class="btn sb">
+                short break
+              </button>
+                        <button onclick="changeMode('lb')" id="lb" class="btn lb">
+                long break
+              </button>
+                    </div>
+                </div>
+                <div onclick="pauseTimer()" id="pomodoro" class="pomodoro">
+                    <div id="progress" class="progress" style="--p: 100">
+                        <div id="time" class="time">00:00</div>
+                        <div id="info-text" class="info">PAUSE</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

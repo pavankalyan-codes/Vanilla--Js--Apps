@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400&display=swap" rel="stylesheet" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="stylesheet" href="style.css" />
+    <title>OTP Component</title>
+</head>
+
+<body>
+    <div class="main">
+        <div>
+            <h1>Enter OTP</h1>
+        </div>
+        <div class="otp-container">
+            <div class="squares">
+                <div class="square">
+                    <input type="number" id="box1" max="9" class="otp-box" type="number " maxlength="1 " />
+                </div>
+                <div class="square">
+                    <input type="number" id="box2" class="otp-box" type="number " maxlength="1 " />
+                </div>
+                <div class="square">
+                    <input type="number" id="box3" class="otp-box" type="number " maxlength="1 " />
+                </div>
+                <div class="square">
+                    <input type="number" id="box4" class="otp-box" type="number " maxlength="1 " />
+                </div>
+                <div class="square">
+                    <input type="number" id="box5" class="otp-box" type="number " maxlength="1 " />
+                </div>
+                <div class="square">
+                    <input type="number" id="box6" class="otp-box" type="number " maxlength="1 " />
+                </div>
+            </div>
+        </div>
+        <div class="submit">
+            <button onclick="submitOtp()" id="submit-otp" class="btn disabled submit-btn animate__shakeX">
+          Submit OTP
+        </button>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

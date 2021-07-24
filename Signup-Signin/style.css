@@ -1,0 +1,90 @@
+button {
+  background: black !important;
+  border: none !important;
+  border-radius: 0px !important;
+}
+
+.login-signup {
+  margin: auto;
+}
+body {
+  color: white;
+  font-family: "Lexend", sans-serif !important;
+  height: max(500px, 100vh);
+  display: flex;
+  justify-content: center;
+}
+h4 {
+  text-align: center;
+}
+#confirmPass {
+  width: 100%;
+}
+.cpass {
+  width: 250px;
+}
+.login {
+}
+.signup {
+  color: #108dc7; /* fallback for old browsers */
+  color: -webkit-linear-gradient(
+    to right,
+    #ef8e38,
+    #108dc7
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  color: linear-gradient(
+    to right,
+    #ef8e38,
+    #108dc7
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  cursor: pointer;
+}
+.headbar {
+  height: 50px;
+  background: black;
+
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content {
+  border: 0px solid white;
+  box-shadow: 0px 0px 18px 0px #bababc;
+  height: 400px;
+  width: 300px;
+}
+.dummy {
+}
+.signin {
+  padding: 20px;
+}
+.makeround {
+}
+.myBtn {
+  width: 100px;
+  margin: auto;
+}
+.font-small {
+  font-size: small;
+}
+.hide {
+  display: none !important;
+}
+.main-div {
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  align-items: center;
+  justify-content: center;
+}
+.white-color {
+  color: white;
+}
+#tc {
+  vertical-align: middle;
+}
+#tctext {
+  font-size: 13px;
+  vertical-align: middle;
+}

@@ -1,0 +1,96 @@
+body {
+    height: 100vh;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.main {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 50%;
+}
+
+.btn {
+    border: none;
+    background: white;
+    height: 50px;
+    width: 200px;
+    border-radius: 2px;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    transition: all 0.2s ease-in-out;
+}
+
+.color-details {
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+.copy-icon {
+    margin-left: 5px;
+    color: darkgreen;
+    font-size: x-large;
+}
+
+.label {
+    background: white;
+    height: 30px;
+    width: 100px;
+    text-align: center;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide {
+    display: none;
+}
+
+.clipboard {
+    background: #13a82b;
+    height: 50px;
+    width: 200px;
+    position: absolute;
+    border-radius: 2px;
+    bottom: 10%;
+    left: calc(50% - 100px);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    opacity: 0;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
