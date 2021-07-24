@@ -23,4 +23,4 @@ Pull requests are welcome. Please open an issue first to discuss what you would 
 
 ## License
 
-[MIT](https://github.com/pavankalyan-codes/UI-Designs/blob/main/LICENSE/)
+[MIT](https://github.com/pavankalyan-codes/Vanilla-Js-Apps/blob/main/LICENSE)
