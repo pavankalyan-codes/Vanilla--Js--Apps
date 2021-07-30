@@ -7,18 +7,7 @@ body {
   justify-content: center;
   height: 100vh;
   width: 100%;
-  background: #41295a; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #2f0743,
-    #41295a
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #2f0743,
-    #41295a
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, #3c1111, #060506);
 }
 h1 {
   text-align: center;
@@ -59,7 +48,8 @@ h1 {
 }
 .theatre {
   height: 100vh;
-  width: 80%;
+  width: 694px;
+  padding: 40px;
 }
 .seat,
 .sold,
@@ -71,9 +61,14 @@ h1 {
   border-radius: 5px;
   cursor: pointer;
   color: white;
+  margin: 2px;
 }
 
 @media screen and (max-width: 700px) {
+  .theatre {
+    width: 100%;
+    padding: 50px 10px 0px 10px;
+  }
   .seat,
   .sold,
   .available,
@@ -151,4 +146,11 @@ span {
 }
 .lm {
   margin-left: 5px;
+}
+small {
+  color: #0d6efd;
+  font-weight: unset;
+  display: flex;
+  justify-content: center;
+  margin: 5px 20px 20px 20px;
 }

@@ -20,7 +20,7 @@ window.onload = function () {
     var rowDiv = document.createElement("div");
     rowDiv.setAttribute(
       "class",
-      "myrow d-flex justify-content-between mt-2 w-100"
+      "myrow d-flex mt-2 w-100"
     );
     rowDiv.setAttribute("id", rowIndex);
     seatsElement.appendChild(rowDiv);
@@ -32,7 +32,7 @@ window.onload = function () {
     numberNode.setAttribute("class", "numbering");
 
     let leftNode = document.createElement("div");
-    leftNode.setAttribute("class", "d-flex justify-content-between left");
+    leftNode.setAttribute("class", "d-flex left");
 
     for (let j = 1; j <= 12; j++) {
       let seat = document.createElement("div");
@@ -44,7 +44,7 @@ window.onload = function () {
     gapNode.setAttribute("class", "gap");
 
     let rightNode = document.createElement("div");
-    rightNode.setAttribute("class", "d-flex right justify-content-between");
+    rightNode.setAttribute("class", "d-flex right");
 
     for (let j = 1; j <= 12; j++) {
       let seat = document.createElement("div");
@@ -65,7 +65,7 @@ window.onload = function () {
     var rowDiv = document.createElement("div");
     rowDiv.setAttribute(
       "class",
-      "myrow d-flex justify-content-between mt-2 w-100"
+      "myrow d-flex mt-2 w-100"
     );
     rowDiv.setAttribute("id", rowIndex);
     seatsElement.appendChild(rowDiv);
@@ -77,7 +77,7 @@ window.onload = function () {
     numberNode.setAttribute("class", "numbering");
 
     let leftNode = document.createElement("div");
-    leftNode.setAttribute("class", "d-flex justify-content-between left");
+    leftNode.setAttribute("class", "d-flex left");
 
     for (let j = 1; j <= 12; j++) {
       let seat = document.createElement("div");
@@ -89,7 +89,7 @@ window.onload = function () {
     gapNode.setAttribute("class", "gap");
 
     let rightNode = document.createElement("div");
-    rightNode.setAttribute("class", "d-flex right justify-content-between");
+    rightNode.setAttribute("class", "d-flex right");
 
     for (let j = 1; j <= 12; j++) {
       let seat = document.createElement("div");
@@ -109,7 +109,7 @@ window.onload = function () {
     var rowDiv = document.createElement("div");
     rowDiv.setAttribute(
       "class",
-      "myrow d-flex justify-content-between mt-4 mb-4 w-100"
+      "myrow d-flex mt-4 mb-4 w-100"
     );
     rowDiv.setAttribute("id", rowIndex);
     seatsElement.appendChild(rowDiv);
@@ -121,9 +121,9 @@ window.onload = function () {
     numberNode.setAttribute("class", "numbering");
 
     let line = document.createElement("div");
-    line.setAttribute("class", "d-flex justify-content-between left w-100");
+    line.setAttribute("class", "d-flex left w-100");
 
-    for (let j = 1; j <= 24; j++) {
+    for (let j = 1; j <= 26; j++) {
       let seat = document.createElement("div");
       seat.setAttribute("class", "seat");
       line.appendChild(seat);
