@@ -325,7 +325,7 @@ function getBrowserSearchbar() {
       type="text"
       id="search"
       class="col-9"
-      value="www.google.com"
+      value="https://pavankalyan-codes.github.io/"
     />
     </div >
   </div >`;
@@ -411,7 +411,7 @@ function chromeWindow() {
             type="text"
             id="search"
             class="col-9"
-            value="www.google.com"
+            value="https://pavankalyan-codes.github.io/"
           />
         </div>
       </div>
@@ -420,7 +420,7 @@ function chromeWindow() {
         <iframe
           class=""
           id="chrome-iframe"
-          src="https://www.google.com/webhp?igu=1"
+          src="https://pavankalyan-codes.github.io/"
           frameborder="0"
         ></iframe>
       </div>
