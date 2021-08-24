@@ -86,7 +86,7 @@ function DelayedCallMe(num) {
     if (_timer) window.clearTimeout(_timer);
     _timer = window.setTimeout(function() {
         getCities();
-    }, 500);
+    }, 250);
 }
 
 const randomColor = () => {
