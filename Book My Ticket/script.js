@@ -10,7 +10,7 @@ window.onload = function () {
     if (booked.length === 5) break;
   }
 
-  console.log(booked);
+
 
   let seatsElement = document.getElementsByClassName("cheap")[0];
   //insert  cheap rows
@@ -104,8 +104,6 @@ window.onload = function () {
 
   seatsElement = document.getElementsByClassName("platinum")[0];
   for (let i = 10; i < 11; i++) {
-    // seatsElement.innerHTML +=
-    //   '<div class="numbering">' + rows[rowIndex--] + "</div>";
     var rowDiv = document.createElement("div");
     rowDiv.setAttribute(
       "class",
@@ -120,22 +118,40 @@ window.onload = function () {
     numberNode.textContent = rows[rowIndex--];
     numberNode.setAttribute("class", "numbering");
 
-    let line = document.createElement("div");
-    line.setAttribute("class", "d-flex left w-100");
+    let lineLeft = document.createElement("div");
+    lineLeft.setAttribute("class", "d-flex left ");
 
-    for (let j = 1; j <= 26; j++) {
+    for (let j = 1; j <= 12; j++) {
       let seat = document.createElement("div");
       seat.setAttribute("class", "seat");
-      line.appendChild(seat);
+      lineLeft.appendChild(seat);
+    }
+    let gapNode = document.createElement("div");
+    gapNode.setAttribute("class", "gap");
+    let lineCenter=document.createElement("div");
+    lineCenter.setAttribute("class","seat");
+    let lineCenter1=document.createElement("div");
+    lineCenter1.setAttribute("class","seat");
+    gapNode.appendChild(lineCenter);
+    gapNode.appendChild(lineCenter1);
+    let lineRight = document.createElement("div");
+    lineRight.setAttribute("class", "d-flex left ");
+    for (let j = 1; j <= 12; j++) {
+      let seat = document.createElement("div");
+      seat.setAttribute("class", "seat");
+      lineRight.appendChild(seat);
     }
 
     rowNode.appendChild(numberNode);
-    rowNode.appendChild(line);
+    rowNode.appendChild(lineLeft);
+    rowNode.appendChild(gapNode);
+    rowNode.appendChild(lineRight);
   }
   //insert lounge rows
 
   var seats = document.getElementsByClassName("seat");
   var seatId = 1;
+
   for (let i = 0; i < seats.length; i++) {
     let element = seats[i];
     if (booked.includes(seatId)) {
