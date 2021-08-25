@@ -10,13 +10,9 @@ window.onload = function () {
     if (booked.length === 5) break;
   }
 
-
-
   let seatsElement = document.getElementsByClassName("cheap")[0];
   //insert  cheap rows
   for (let i = 0; i < 4; i++) {
-    // seatsElement.innerHTML +=
-    //   '<div class="numbering">' + rows[rowIndex--] + "</div>";
     var rowDiv = document.createElement("div");
     rowDiv.setAttribute(
       "class",
@@ -60,8 +56,6 @@ window.onload = function () {
   //insert gold rows
   seatsElement = document.getElementsByClassName("gold")[0];
   for (let i = 4; i < 10; i++) {
-    // seatsElement.innerHTML +=
-    //   '<div class="numbering">' + rows[rowIndex--] + "</div>";
     var rowDiv = document.createElement("div");
     rowDiv.setAttribute(
       "class",
@@ -102,6 +96,7 @@ window.onload = function () {
     rowNode.appendChild(rightNode);
   }
 
+  //insert lounge rows
   seatsElement = document.getElementsByClassName("platinum")[0];
   for (let i = 10; i < 11; i++) {
     var rowDiv = document.createElement("div");
@@ -147,8 +142,7 @@ window.onload = function () {
     rowNode.appendChild(gapNode);
     rowNode.appendChild(lineRight);
   }
-  //insert lounge rows
-
+  
   var seats = document.getElementsByClassName("seat");
   var seatId = 1;
 
@@ -166,7 +160,6 @@ window.onload = function () {
       } else {
         element.classList.add("seat");
         element.classList.remove("selected");
-        //element.style.background = "#7c7474";
       }
     };
     seatId++;
@@ -177,4 +170,16 @@ window.onload = function () {
 function getRandom() {
   return Math.floor(Math.random() * (264 - 1)) + 1;
 }
-function bookSeat(id) {}
+function bookSeat() {
+  let seats=[...document.getElementsByClassName('seat selected')].map(seat=>{
+    return parseInt(seat.id);
+  }).reduce((acc,val)=>{
+    return acc+val+",";
+  },"");
+  if(seats){
+    alert(`${seats.substring(0, seats.length-1)} have been booked!!!`);
+  }
+  else{
+    alert("Please select seats to book.")
+  }
+}
