@@ -1,0 +1,162 @@
+:root {
+  --page-bg: #3b4664;
+  --btn-bg: white;
+  --btn-text-color: black;
+  --normal-btn-shadow: rgb(122 119 119);
+  --text-btn-bg: #647299;
+  --text-btn-shadow: #465069;
+  --equal-btn-bg: #d13e2f;
+  --equal-btn-shadow: #ad2617;
+  --keypad-bg: #181f32;
+  --output-bg: #181f32;
+  --output-btn-textcolor: white;
+  --page-text-color: white;
+}
+
+body {
+  margin: 0;
+  background-color: var(--page-bg);
+  color: var(--page-text-color);
+  font-family: "Spartan", sans-serif;
+}
+.calculator {
+  width: 400px;
+  height: max(100vh, 500px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.output {
+  height: 100px;
+  border-radius: 5px;
+  background: var(--output-bg);
+  margin-top: 10px;
+  font-size: 20px;
+  text-align: right;
+}
+.keypad {
+  height: 450px;
+  background-color: var(--keypad-bg);
+  margin-top: 10px;
+  border-radius: 5px;
+  padding-top: 20px;
+}
+.line {
+  height: 20%;
+}
+.cal-button {
+  width: 100%;
+  background: var(--btn-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 0px 4px 1px 0px var(--normal-btn-shadow);
+  border: none;
+  height: 75%;
+  color: var(--btn-text-color);
+  font-size: 30px;
+}
+.line > col {
+  display: flex;
+  justify-content: center;
+}
+.text-btn {
+  background-color: var(--text-btn-bg) !important;
+  color: white !important;
+  box-shadow: 0px 4px 1px 0px var(--text-btn-shadow) !important;
+  font-size: 20px;
+}
+.big-button {
+  width: 100%;
+  height: 70%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 0px 4px 1px 0px rgb(122, 119, 119);
+  border: none;
+}
+.theme {
+  font-size: 12px;
+  text-align: end;
+}
+button:active {
+  transform: translateY(2px);
+  box-shadow: none !important;
+}
+.dark-orange {
+  background: var(--equal-btn-bg);
+  box-shadow: 0px 4px 1px 0px var(--equal-btn-shadow);
+  color: var(--output-btn-textcolor) !important;
+}
+.user-input::after {
+  content: "|";
+  -webkit-animation: 1s blink step-end infinite;
+  -moz-animation: 1s blink step-end infinite;
+  -ms-animation: 1s blink step-end infinite;
+  -o-animation: 1s blink step-end infinite;
+  animation: 1s blink step-end infinite;
+  color:var(--page-text-color);
+}
+
+@keyframes blink {
+  from,
+  to {
+    color: transparent;
+  }
+  50% {
+    color: var(--page-text-color);
+  }
+}
+
+.switch {
+  height: 20px;
+  width: 80px;
+  border-radius: 10px;
+  margin-left: 10px;
+  background-color: var(--keypad-bg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 4px;
+  padding-bottom: 2px;
+  position: relative;
+}
+.switch:hover {
+  cursor: pointer;
+}
+.switch > div {
+  height: 15px;
+  width: 15px;
+  background: var(--equal-btn-bg);
+  border-radius: 50%;
+  position: absolute;
+}
+.center-toggle {
+  left: calc(50% - 7.5px);
+}
+.right-toggle {
+  right: 3px;
+}
+.theme1{
+    position: absolute;
+    bottom: 100%;
+    justify-content: start;
+    width: 10px;
+}
+.theme2{
+    position: absolute;
+    bottom: 100%;
+    justify-content: start;
+    width: 10px;
+    left:calc(50% - 5px);
+}
+.theme3{
+    position: absolute;
+    bottom: 100%;
+    justify-content: start;
+    width: 10px;
+    right:7px;
+}
