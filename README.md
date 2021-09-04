@@ -1,5 +1,3 @@
-# Vanilla Javascript Apps
-
 |  #  |                                                   Project                                                   |                                         Live Demo                                         |
 | :-: | :---------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------: |
 | 01  |     [Book My Ticket](https://github.com/pavankalyan-codes/Vanilla-Js-Apps/tree/main/Book%20My%20Ticket)     |   [Live Demo](https://pavankalyan-codes.github.io/Vanilla-Js-Apps/Book%20My%20Ticket/)    |
