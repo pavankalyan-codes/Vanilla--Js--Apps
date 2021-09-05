@@ -15,6 +15,7 @@
 | 13  |        [Sudoku solver](https://github.com/pavankalyan-codes/Vanilla-Js-Apps/tree/main/sudoku-solver)        |      [Live Demo](https://pavankalyan-codes.github.io/Vanilla-Js-Apps/sudoku-solver/)      |
 | 14  |  [Tip calculator](https://github.com/pavankalyan-codes/Vanilla-Js-Apps/tree/main/tip-calculator-app-main)   | [Live Demo](https://pavankalyan-codes.github.io/Vanilla-Js-Apps/tip-calculator-app-main/) |
 | 15  |  [Infinite Scroll](https://github.com/pavankalyan-codes/Vanilla-Js-Apps/tree/main/Infinite-scroll)   | [Live Demo](https://pavankalyan-codes.github.io/Vanilla-Js-Apps/Infinite-scroll/) |
+| 16  |  [Calculator + Theme switcher](https://github.com/pavankalyan-codes/Vanilla-Js-Apps/tree/main/calculator-app-main)   | [Live Demo](https://pavankalyan-codes.github.io/Vanilla-Js-Apps/calculator-app-main/) |
 
 ## Contributing
 
