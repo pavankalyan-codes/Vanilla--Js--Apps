@@ -69,12 +69,19 @@ function compute(token){
             outputElement.style.fontSize="20px";
             break;
         case 'del':
+        case 'backspace':
+            console.log(output);
             output =output.substring(0,output.length-1);
+            break;
+        case '*':
+        case 'x':
+            output+='x';
             break;
         case 'enter':
         case '=':
+            console.log(output);
             try{
-                output = eval(output);
+                output = eval(output.replaceAll('x','*')).toString();
             }
             catch(err){
                 console.log(err);
