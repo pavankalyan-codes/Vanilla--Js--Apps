@@ -16,7 +16,9 @@
 | 14  |  [Tip calculator](https://github.com/pavankalyan-codes/Vanilla-Js-Apps/tree/main/tip-calculator-app-main)   | [Live Demo](https://pavankalyan-codes.github.io/Vanilla-Js-Apps/tip-calculator-app-main/) |
 | 15  |  [Infinite Scroll](https://github.com/pavankalyan-codes/Vanilla-Js-Apps/tree/main/Infinite-scroll)   | [Live Demo](https://pavankalyan-codes.github.io/Vanilla-Js-Apps/Infinite-scroll/) |
 | 16  |  [Calculator + Theme switcher](https://github.com/pavankalyan-codes/Vanilla-Js-Apps/tree/main/calculator-app-main)   | [Live Demo](https://pavankalyan-codes.github.io/Vanilla-Js-Apps/calculator-app-main/) |
-| 17  |  [Random Joke Generator onclick](https://github.com/pavankalyan-codes/Vanilla-Js-Apps/tree/main/RandomJoke_OnClick)   | [Live Demo](https://pavankalyan-codes.github.io/Vanilla-Js-Apps/RandomJoke_OnClick/) |## Contributing
+| 17  |  [Random Joke Generator onclick](https://github.com/pavankalyan-codes/Vanilla-Js-Apps/tree/main/RandomJoke_OnClick)   | [Live Demo](https://pavankalyan-codes.github.io/Vanilla-Js-Apps/RandomJoke_OnClick/) |
+
+## Contributing
 
 Pull requests are welcome. Please open an issue first to discuss what you would like to change.
 
